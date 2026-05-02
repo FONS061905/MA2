@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "Alloy Wheel Set (17 inch)",
+    "price": 18000,
+    "category": "Wheels",
+    "description": "Set of 4, minor curb rash, balanced",
+    "seller": "Alfonso Barte"
+  },
+  {
+    "id": 2,
+    "name": "Car Stereo Head Unit",
+    "price": 6500,
+    "category": "Electronics",
+    "description": "Bluetooth, USB, AUX, includes wiring harness",
+    "seller": "Aaron Manalo"
+  },
+  {
+    "id": 3,
+    "name": "LED Headlight Bulbs (H4)",
+    "price": 1800,
+    "category": "Lighting",
+    "description": "Pair, 6000K white, plug and play",
+    "seller": "Lance Fedelicio"
+  },
+  {
+    "id": 4,
+    "name": "Roof Rack Cross Bars",
+    "price": 4200,
+    "category": "Accessories",
+    "description": "Universal fit, includes locks and keys",
+    "seller": "Andrei Agustin"
+  },
+  {
+    "id": 5,
+    "name": "Performance Air Filter",
+    "price": 900,
+    "category": "Engine",
+    "description": "Reusable high-flow filter, lightly used",
+    "seller": "Joshua Lapuz"
+  },
+  {
+    "id": 6,
+    "name": "Front Brake Pads",
+    "price": 1600,
+    "category": "Brakes",
+    "description": "Ceramic pads, fits compact sedans",
+    "seller": "Jhayvee Adajar"
+  },
+  {
+    "id": 7,
+    "name": "Car Dash Camera",
+    "price": 3200,
+    "category": "Electronics",
+    "description": "1080p, night vision, 64GB card included",
+    "seller": "Dani Sahagun"
+  },
+  {
+    "id": 8,
+    "name": "Seat Cover Set",
+    "price": 1500,
+    "category": "Interior",
+    "description": "Breathable fabric, fits most sedans",
+    "seller": "Djan Catibog"
+  },
+  {
+    "id": 9,
+    "name": "Car Floor Mats",
+    "price": 900,
+    "category": "Interior",
+    "description": "All-weather rubber mats, set of 4",
+    "seller": "Marc Dela pena"
+  },
+  {
+    "id": 10,
+    "name": "Tool Kit (Automotive)",
+    "price": 2200,
+    "category": "Tools",
+    "description": "Socket set, wrenches, screwdrivers included",
+    "seller": "Harry Garcia"
+  },
+  {
+    "id": 11,
+    "name": "JVT V3 power pipe",
+    "price": 6000,
+    "category": "Engine",
+    "description": "JVT V3 power pipe for aerox/nmax",
+    "seller": "Joseph Abrenica"
+  },
+  {
+    "id": 12,
+    "name": "RCB SP500 MAGS",
+    "price": 8000,
+    "category": "Wheels",
+    "description": "For Nmax/Aerox",
+    "seller": "RCB Official"
+  },
+  {
+    "id": 13,
+    "name": "Pangbomba ng gulong",
+    "price": 1500,
+    "category": "Tools",
+    "description": "Air Filling Tires",
+    "seller": "Fonsi Jiwa"
+  }
+]

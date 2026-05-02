@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Product - Local Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="button-styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">Local <span>Marketplace</span></div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/overview">Products</a></li>
+        <li><a href="/api">API</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content form-shell">
+    <section class="form-container">
+      <h1 class="form-title">Add New Product</h1>
+      <p class="form-subtitle">Create a complete listing by filling in the required fields.</p>
+
+      <form action="/add-product" method="POST" id="addProductForm">
+        <div class="form-group">
+          <label for="name">Product Name <span class="required">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Enter product name">
+        </div>
+
+        <div class="form-group">
+          <label for="price">Price (&#8369;) <span class="required">*</span></label>
+          <input type="number" id="price" name="price" required min="0" step="0.01" placeholder="0.00">
+        </div>
+
+        <div class="form-group">
+          <label for="category">Category <span class="required">*</span></label>
+          <select id="category" name="category" required>
+            <option value="">Select a category</option>
+            <option value="Electronics">Electronics</option>
+            <option value="Books">Books</option>
+            <option value="Clothing">Clothing</option>
+            <option value="Sports">Sports</option>
+            <option value="Home Appliances">Home Appliances</option>
+            <option value="Accessories">Accessories</option>
+            <option value="Fashion">Fashion</option>
+            <option value="Photography">Photography</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" placeholder="Describe your product (condition, features, etc.)"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="seller">Seller Name <span class="required">*</span></label>
+          <input type="text" id="seller" name="seller" required placeholder="Your name">
+        </div>
+
+        <div class="button-group">
+          <a href="/overview" class="btn btn-secondary btn-wide">Cancel</a>
+          <button type="submit" class="btn btn-primary btn-wide">Add Product</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Local Marketplace. Built with Node.js and Express.</p>
+  </footer>
+
+  <script>
+    document.getElementById('addProductForm').addEventListener('submit', function (e) {
+      const name = document.getElementById('name').value.trim();
+      const price = document.getElementById('price').value;
+      const category = document.getElementById('category').value;
+      const seller = document.getElementById('seller').value.trim();
+
+      if (!name || !price || !category || !seller) {
+        e.preventDefault();
+        alert('Please fill in all required fields.');
+        return;
+      }
+
+      if (parseFloat(price) <= 0) {
+        e.preventDefault();
+        alert('Price must be greater than 0.');
+      }
+    });
+  </script>
+</body>
+</html>

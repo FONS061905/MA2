@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Motorcycle Helmet Full Face",
+    "price": 3500,
+    "category": "Motorcycle Accessories",
+    "description": "DOT certified full face motorcycle helmet with visor and ventilation system",
+    "seller": "RiderGear PH"
+  },
+  {
+    "name": "Car Engine Oil 5W-30",
+    "price": 1200,
+    "category": "Car Parts",
+    "description": "Synthetic engine oil 4L pack suitable for most modern cars",
+    "seller": "AutoParts Central"
+  },
+  {
+    "name": "Motorcycle Chain Lubricant",
+    "price": 450,
+    "category": "Motorcycle Accessories",
+    "description": "High-performance chain lubricant for all weather conditions, 200ml spray",
+    "seller": "BikePro PH"
+  },
+  {
+    "name": "Car Phone Mount",
+    "price": 850,
+    "category": "Car Accessories",
+    "description": "Adjustable dashboard phone mount with 360-degree rotation",
+    "seller": "DriveSafe"
+  },
+  {
+    "name": "Motorcycle Rain Gear",
+    "price": 2800,
+    "category": "Motorcycle Accessories",
+    "description": "Waterproof riding jacket and pants set with reflective strips",
+    "seller": "RiderGear PH"
+  },
+  {
+    "name": "Car LED Headlight Bulbs",
+    "price": 4200,
+    "category": "Car Parts",
+    "description": "LED conversion kit H4 type, 6000K white light, plug and play",
+    "seller": "AutoParts Central"
+  },
+  {
+    "name": "Motorcycle Grip Handles",
+    "price": 650,
+    "category": "Motorcycle Accessories",
+    "description": "Ergonomic rubber grip handles with vibration dampening",
+    "seller": "BikePro PH"
+  }
+]

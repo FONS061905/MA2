@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{%PRODUCTNAME%} - Local Marketplace</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="button-styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <div class="logo">Local <span>Marketplace</span></div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/overview">Products</a></li>
+        <li><a href="/api">API</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main-content">
+    <article class="product-detail">
+      <div class="detail-head">
+        <h1>{%PRODUCTNAME%}</h1>
+      </div>
+
+      <div class="detail-grid">
+        <div class="detail-chip">
+          <strong>Price</strong>
+          <span>&#8369;{%PRICE%}</span>
+        </div>
+        <div class="detail-chip">
+          <strong>Category</strong>
+          <span>{%CATEGORY%}</span>
+        </div>
+        <div class="detail-chip">
+          <strong>Seller</strong>
+          <span>{%SELLER%}</span>
+        </div>
+        <div class="detail-chip">
+          <strong>Product ID</strong>
+          <span>{%ID%}</span>
+        </div>
+      </div>
+
+      <div class="detail-description">
+        <strong>Description:</strong>
+        <p>{%DESCRIPTION%}</p>
+      </div>
+
+      <div class="action-row">
+        <a href="/item?id={%ID%}&format=json" class="btn btn-primary btn-wide">View API Data</a>
+        <button class="btn btn-update btn-wide" onclick="alert('Update functionality is not yet implemented!')">Update Product</button>
+        <button class="btn btn-delete btn-wide" onclick="alert('Delete functionality is not yet implemented!')">Delete Product</button>
+      </div>
+
+      <a href="/overview" class="back-link">Back to Products</a>
+    </article>
+  </main>
+
+  <footer class="footer">
+    <p>&copy; 2026 Local Marketplace. Built with Node.js and Express.</p>
+  </footer>
+</body>
+</html>

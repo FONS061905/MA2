@@ -1,0 +1,41 @@
+.page-header {
+  align-items: flex-end;
+}
+
+.btn-add-product {
+  min-width: 156px;
+}
+
+.btn-view-details,
+.btn-update,
+.btn-delete {
+  flex: 1;
+  min-width: 90px;
+}
+
+.btn-view-details {
+  background: var(--accent);
+  color: #fff;
+}
+
+.btn-view-details:hover {
+  background: var(--accent-strong);
+}
+
+.btn-update {
+  background: #fbbf24;
+  color: #1f2937;
+}
+
+.btn-update:hover {
+  background: #f59e0b;
+}
+
+.btn-delete {
+  background: #ef4444;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background: #dc2626;
+}
