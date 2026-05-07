@@ -14,19 +14,28 @@ dotenv.config({ path: './config.env' });
 
 const connectDB = require('./db');
 
-connectDB();
-
 const app = require('./app');
 
 const port = process.env.PORT || 3000;
-const server = app.listen(port, () => {
-  console.log(`App running on port ${port} in ${process.env.NODE_ENV} mode...`);
-});
+let server;
+
+connectDB()
+  .then(() => {
+    server = app.listen(port, () => {
+      console.log(`App running on port ${port} in ${process.env.NODE_ENV} mode...`);
+    });
+  })
+  .catch(err => {
+    console.log('DATABASE CONNECTION ERROR! Shutting down...');
+    console.log(err.name, err.message);
+    process.exit(1);
+  });
 
 process.on('unhandledRejection', err => {
   console.log('UNHANDLED REJECTION! Shutting down...');
   console.log(err.name, err.message);
-  server.close(() => {
+  if (!server) {
     process.exit(1);
-  });
+  }
+  server.close(() => process.exit(1));
 });
