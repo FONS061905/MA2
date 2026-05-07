@@ -12,6 +12,12 @@ const dotenv = require('dotenv');
 
 dotenv.config({ path: './config.env' });
 
+// Fail fast if required env vars are missing
+if (!process.env.JWT_SECRET) {
+  console.log('FATAL: JWT_SECRET environment variable is not set. Server cannot start.');
+  process.exit(1);
+}
+
 const connectDB = require('./db');
 
 const app = require('./app');

@@ -4,7 +4,7 @@
   "values": [
     {
       "key": "baseUrl",
-      "value": "https://your-live-link.onrender.com",
+      "value": "https://ma2-rbxc.onrender.com",
       "type": "default",
       "enabled": true
     },
@@ -22,7 +22,7 @@
     },
     {
       "key": "adminEmail",
-      "value": "admin@example.com",
+      "value": "admin2026@example.com",
       "type": "default",
       "enabled": true
     },

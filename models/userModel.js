@@ -65,10 +65,12 @@ userSchema.pre('save', function (next) {
   next();
 });
 
-// Filter out inactive users from all find queries
-userSchema.pre(/^find/, function (next) {
-  this.find({ active: { $ne: false } });
-  next();
+// Filter out inactive users from all find queries (Mongoose 9: no next in query middleware)
+userSchema.pre('find', function () {
+  this.where({ active: { $ne: false } });
+});
+userSchema.pre('findOne', function () {
+  this.where({ active: { $ne: false } });
 });
 
 // Instance method: check if entered password matches stored hash
